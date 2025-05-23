@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин одежды</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="top-header">
+            <div class="header-container">
+                <div class="left-section">
+                    <div class="language-selector">
+                        <button class="language-current">
+                          <span class="language-flag">🇷🇺</span>
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="language-dropdown">
+                          <li data-lang="ru">
+                            <span class="language-flag">🇷🇺</span>
+                            <span class="language-name">Русский</span>
+                          </li>
+                          <li data-lang="en">
+                            <span class="language-flag">🇬🇧</span>
+                            <span class="language-name">English</span>
+                          </li>
+                          <li data-lang="uk">
+                            <span class="language-flag">🇺🇦</span>
+                            <span class="language-name">Українська</span>
+                          </li>
+                        </ul>
+                      </div>
+                    <div class="contact-info">
+                        <button class="address-btn">Адрес магазина</button>
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="phone">+375 (29) 53-28-557</div>
+                </div>
+                
+                <div class="logo">
+                    <img src="рисунки/logo.png" alt="Логотип">
+                </div>
+                
+                <div class="right-section">
+                    <button class="icon-btn" aria-label="Поиск">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Войти">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="categories-menu">
+            <nav class="categories-nav">
+                <ul class="categories-list">
+                    <li><a href="#">КОСТЮМЫ</a></li>
+                    <li><a href="#">ХАЛАТЫ</a></li>
+                    <li><a href="#">ТОПЫ</a></li>
+                    <li><a href="#">БРЮКИ</a></li>
+                    <li><a href="#">ТОЛСТОВКИ</a></li>
+                    <li><a href="#">ШАПОЧКИ</a></li>
+                    <li><a href="#">ОБУВЬ</a></li>
+                    <li><a href="#">АКЦИИ</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i> Меню
+        </button>
+    </div>
+
+    <!-- Слайдер баннеров -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="slider-dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+        </div>
+    </div>
+    
+
+    <!-- Топ продаж -->
+    <section class="top-sales">
+        <h2 class="top-sales-title">Топ продаж</h2>
+        <div class="products-slider">
+            <div class="product-card">
+                <img src="рисунки/белыйхалат.png" alt="Женский медицинский костюм" class="product-image">
+                <h3 class="product-name">Женский медицинский костюм</h3>
+                <p class="product-price">900 грн</p>
+            </div>
+            <div class="product-card">
+                <img src="рисунки/синийхалат.png" alt="Женский медицинский халат" class="product-image">
+                <h3 class="product-name">Женский медицинский халат</h3>
+                <p class="product-price">800 грн</p>
+            </div>
+            <div class="product-card">
+                <img src="рисунки/халатбабочка.png" alt="Женский медицинский костюм" class="product-image">
+                <h3 class="product-name">Женский медицинский костюм</h3>
+                <p class="product-price">1000 грн</p>
+            </div>
+            <div class="product-card">
+                <img src="рисунки/кроксы.png" alt="Кроксы женские" class="product-image">
+                <h3 class="product-name">Кроксы женские</h3>
+                <p class="product-price">900 грн</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог -->
+    <section class="catalog-section">
+        <h2 class="section-title">Каталог</h2>
+        
+        <!-- Первый ряд - 3 большие карточки -->
+        <div class="catalog-row large-cards">
+            <div class="catalog-card large">
+                <img src="рисунки/синий.png" alt="Медицинский костюм" class="catalog-image">
+                <h3 class="catalog-item-name">Медицинский костюм</h3>
+                <p class="catalog-item-price">950 грн</p>
+            </div>
+            <div class="catalog-card large">
+                <img src="рисунки/белый.png" alt="Медицинский халат" class="catalog-image">
+                <h3 class="catalog-item-name">Медицинский халат</h3>
+                <p class="catalog-item-price">850 грн</p>
+            </div>
+            <div class="catalog-card large">
+                <img src="рисунки/черный.png" alt="Топы" class="catalog-image">
+                <h3 class="catalog-item-name">Топы</h3>
+                <p class="catalog-item-price">750 грн</p>
+            </div>
+        </div>
+        
+        <!-- Второй ряд - 4 маленькие карточки -->
+        <div class="catalog-row small-cards">
+            <div class="catalog-card small">
+                <img src="рисунки/брюки.png" alt="Брюки" class="catalog-image">
+                <h3 class="catalog-item-name">Медицинский топ</h3>
+            </div>
+            <div class="catalog-card small">
+                <img src="рисунки/толстовки.png" alt="Медицинская толстовка" class="catalog-image">
+                <h3 class="catalog-item-name">Медицинская толстовка</h3>
+               
+            </div>
+            <div class="catalog-card small">
+                <img src="рисунки/шапки.png" alt="Медицинская шапочка" class="catalog-image">
+                <h3 class="catalog-item-name">Медицинская шапочка</h3>
+               
+            </div>
+            <div class="catalog-card small">
+                <img src="рисунки/кроксы1.png" alt="Медицинская обувь" class="catalog-image">
+                <h3 class="catalog-item-name">Медицинская обувь</h3>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="top-sales">
+        <h2 class="top-sales-title">Новые поступления</h2>
+        <div class="products-slider">
+            <div class="product-card">
+                <img src="рисунки/белыйхалатНовый.png" alt="Женский медицинский костюм" class="product-image">
+                <h3 class="product-name">Женский медицинский костюм</h3>
+                <p class="product-price">900 грн</p>
+            </div>
+            <div class="product-card">
+                <img src="рисунки/синийхалатНовинка.png" alt="Женский медицинский халат" class="product-image">
+                <h3 class="product-name">Женский медицинский халат</h3>
+                <p class="product-price">800 грн</p>
+            </div>
+            <div class="product-card">
+                <img src="рисунки/халатбабочкаНовый.png" alt="Женский медицинский костюм" class="product-image">
+                <h3 class="product-name">Женский медицинский костюм</h3>
+                <p class="product-price">1000 грн</p>
+            </div>
+            <div class="product-card">
+                <img src="рисунки/кроксыНовый.png" alt="Кроксы женские" class="product-image">
+                <h3 class="product-name">Кроксы женские</h3>
+                <p class="product-price">900 грн</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новый блок с информацией о магазине -->
+    <section class="shop-info-section">
+        <div class="shop-info-container">
+            <div class="shop-info-text">
+                <h2>Наш магазин в Киеве</h2>
+                <p class="shop-address"><strong>ТЦ "Променада Центр", вулиця Овруцька, 18</strong></p>
+                <p class="shop-phone">+38 (067) 198-33-77</p>
+                <p class="shop-hours">Ежедневно с 10:00 до 20:00</p>
+                <button class="map-button">Посмотреть на карте</button>
+            </div>
+            <div class="shop-info-image">
+                <img src="рисунки/место.png" alt="Фото магазина">
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer_items">
+            <div class="footer_item">
+                <div class="nav_logo">
+                    <img src="рисунки/logoW.png">
+                </div>
+                <div class="item_social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+
+            <div class="footer_item">
+                <h6>Каталог</h6>
+                <ul>
+                    <li><a href="#">Костюмы</a></li>
+                    <li><a href="#">Халаты</a></li>
+                    <li><a href="#">Топы</a></li>
+                    <li><a href="#">Брюки</a></li>
+                    <li><a href="#">Толстовки</a></li>
+                    <li><a href="#">Шапочки</a></li>
+                    <li><a href="#">Обувь</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_item">
+                <h6>Информация</h6>
+                <ul>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Гарантия и возврат</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
+            </div>
+
+            <div class="magazin_info">
+                <div class="magazin__title">
+                    <h6>Контакты</h6>
+                </div>
+                <div class="magazin_about">
+                    <p>ТЦ "Променада Центр", вулиця Овруцька, 18</p>
+                    <p>Ежедневно с 10:00 до 20:00</p>
+                    <p>+38 (067) 198-33-77</p>
+                </div>
+                <div class="magazin_social">
+                    <i class="fa-brands fa-viber"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_end">
+            <p>© 2022 MedForma</p>
+            <p>Разработка интернет-магазина: Walnut</p>
+        </div>
+    </div>
+</body>
+</html>
